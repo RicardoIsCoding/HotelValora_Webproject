@@ -1,4 +1,4 @@
-# Hotel Valora Web Project
+# Hotel Valora Web Projekt
 
 ## Übungsprojekt - Disclaimer
 
