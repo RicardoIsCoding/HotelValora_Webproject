@@ -1,0 +1,8 @@
+
+.menu p:hover {
+    color: #22315E;
+}
+
+div.Section-Main:hover {
+    cursor: url('../Images/fork-cursor.png'), auto; 
+}

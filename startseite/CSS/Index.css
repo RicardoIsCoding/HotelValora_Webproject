@@ -1,0 +1,80 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hero Section */
+.hero, .restaurant-hero, .contact-hero, .trips-hero, .zimmer-hero {
+    text-align: center;
+    position: relative;
+}
+
+.hero img, .restaurant-hero img, .contact-hero img, .trips-hero img, .zimmer-hero img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.hero h1, .restaurant-hero h1, .contact-hero h1, .trips-hero h1, .zimmer-hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Description Section */
+.description, .restaurant-description, .contact-info {
+    padding: 4em 2em;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.description h1, .restaurant-description h1, .contact-info h1, .trips-description h1, .zimmer-description h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #444;
+}
+
+.description p, .restaurant-description p, .contact-info p, .trips-description, .zimmer-description {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hero h1, .restaurant-hero h1, .contact-hero h1, .trips-hero h1, .zimmer-hero h1 {
+        font-size: 2em;
+    }
+
+    .description, .restaurant-description, .contact-info, .trips-description, .zimmer-description {
+        padding: 2em 1em;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form, .contact-location {
+        max-width: 100%;
+    }
+}

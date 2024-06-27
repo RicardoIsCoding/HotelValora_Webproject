@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Valora Rooms</title>
+    <link rel="stylesheet" href="../startseite/CSS/Index.css">
+    <link rel="stylesheet" href="./CSS/zimmer.css">
+    <link rel="stylesheet" href="../global.css">
+</head>
+
+<body>
+    <!-- Platzhalter -->
+    <header id="header-placeholder"></header>
+    <nav id="dynamic-nav"></nav>
+
+    <div class="zimmer-hero">
+        <img src="./IMAGES/zimmer.jpg" alt="Hotel Zimmer">
+        <h1>Valora Rooms</h1>
+    </div>
+
+    <main>
+        <section class="zimmer-description" id="Start">
+            <h1>Our Rooms</h1>
+            <p>
+                Our hotel offers a variety of rooms to suit your needs.
+                Whether you are traveling alone, with your partner, or with your family, we have the perfect room for
+                you.
+                All of our rooms are equipped with modern amenities and offer a comfortable and relaxing stay.
+            </p>
+        </section>
+
+        <div class="slideshow-container">
+            <div class="large-image-container">
+                <button id="prev" class="nav-arrow">❮</button>
+                <a href="#zimmer1" id="largeImageHref"><img id="largeImage" src="./IMAGES/zimmer1.jpg"
+                        alt="Large Image"></a>
+                <button id="next" class="nav-arrow">❯</button>
+            </div>
+            <div class="thumbnail-container">
+                <a href="#Suite"><img class="thumbnail" src="./IMAGES/zimmer1.jpg" alt="Zimmer Suite"
+                        data-section="#Suite" onclick="showImage(this)"></a>
+                <a href="#classic"><img class="thumbnail" src="./IMAGES/zimmer2.jpg" alt="Zimmer Classic"
+                        data-section="#classic" onclick="showImage(this)"></a>
+            </div>
+        </div>
+
+        <hr style="width: 50vw; margin: 50px auto;">
+
+        <section class="zimmer" id="Suite">
+            <h2>Zimmer - <span style="font-size: smaller; color: #5e5e5e;">Suite</span></h2>
+            <picture>
+                <img src="./IMAGES/zimmer1.jpg" alt="Zimmer Suite">
+            </picture>
+            <p>
+                Our spacious suites offer a comfortable and luxurious stay.
+                Each suite has a separate living area and bedroom, as well as a private balcony with a stunning view of
+                the surrounding mountains.
+                The perfect choice for a romantic getaway or a family vacation.
+            </p>
+        </section>
+
+        <section class="zimmer" id="classic">
+            <h2>Zimmer - <span style="font-size: smaller; color: #5e5e5e;">Classic</span></h2>
+            <picture>
+                <img src="./IMAGES/zimmer2.jpg" alt="Zimmer Classic">
+            </picture>
+            <p>
+                Our classic rooms are perfect for those traveling alone or with a partner.
+                These rooms are cozy and comfortable, with all the amenities you need for a relaxing stay.
+                Each room has a private balcony with a view of the surrounding mountains.
+            </p>
+        </section>
+    </main>
+
+    <!-- Platzhalter -->
+    <footer id="footer-placeholder"></footer>
+    <div id="back-to-top-button"></div>
+
+    <!-- Skripte -->
+    <script src="../GLOBAL_SCRIPTS/loadHeader.js"></script>
+    <script src="../GLOBAL_SCRIPTS/loadNavigation.js"></script>
+    <script src="../GLOBAL_SCRIPTS/loadFooter.js"></script>
+    <script src="../GLOBAL_SCRIPTS/loadGoToTopButton.js"></script>
+    <script src="../GLOBAL_SCRIPTS/GoToTop.js"></script>
+
+    <script src="./JS/slideshowScript.js"></script>
+</body>
+
+</html>

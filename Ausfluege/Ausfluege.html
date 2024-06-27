@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Valora Ausflüge</title>
+    <link rel="stylesheet" href="../startseite/CSS/Index.css">
+    <link rel="stylesheet" href="./CSS/ausfluege.css">
+    <link rel="stylesheet" href="./CSS/table.css">
+    <link rel="stylesheet" href="../global.css">
+</head>
+
+<body>
+    <header id="header-placeholder"></header>
+    <nav id="dynamic-nav"></nav>
+
+    <div class="trips-hero">
+        <img src="./IMAGES/trips-new.jpg" alt="Linz City">
+        <h1>Valora Trips</h1>
+    </div>
+    
+    <main>
+        <section class="trips-description" id="start">
+            <h1>Our selection</h1>
+            <p>
+                Close to the hotel, you can find a variety of activities to do. From sightseeing to shopping, there is
+                something for everyone.
+                Our staff will be happy to help you plan your day and make sure you have a great time.
+            </p>
+        </section>
+
+        <div class="slideshow-container">
+            <div class="large-image-container">
+                <button id="prev" class="nav-arrow">❮</button>
+                <a href="#museum" id="largeImageHref"><img id="largeImage" src="./IMAGES/museum.jpg"
+                        alt="Large Image"></a>
+                <button id="next" class="nav-arrow">❯</button>
+            </div>
+            <div class="thumbnail-container">
+                <a href="#museum"><img class="thumbnail" src="./IMAGES/museumMin.jpg" alt="London Museum"
+                        data-section="#museum" onclick="showImage(this)"></a>
+                <a href="#radfahren"><img class="thumbnail" src="./IMAGES/radfahrenMin.jpg"
+                        alt="a man on a bycicle in nature" data-section="#radfahren" onclick="showImage(this)"></a>
+                <a href="#schiffahrt"><img class="thumbnail" src="./IMAGES/schiffreiseMin.jpg" alt="ship"
+                        data-section="#schiffahrt" onclick="showImage(this)"></a>
+                <a href="#wanderung"><img class="thumbnail" src="./IMAGES/wanderungMin.jpg" alt="nature, hiking"
+                        data-section="#wanderung" onclick="showImage(this)"></a>
+                <a href="#volleyball"><img class="thumbnail" src="./IMAGES/volleyballMin.jpg" alt="volleyball"
+                        data-section="#volleyball" onclick="showImage(this)"></a>
+                <a href="#sauna"><img class="thumbnail" src="./IMAGES/sauna.jpg" alt="sauna" data-section="#sauna"
+                        onclick="showImage(this)"></a>
+                <a href="#mountainbiken"><img class="thumbnail" src="./IMAGES/mountainbiking.jpg" alt="maintainbiken"
+                        data-section="#mountainbiken" onclick="showImage(this)"></a>
+            </div>
+        </div>
+
+        <hr style="width: 50vw; margin: 50px auto;">
+
+        <div style="margin: 10px auto; display: flex; justify-content: center;">
+            <button onclick="toggleTable()">Toggle Table Visibility</button>
+        </div>
+
+        <table class="styled-table">
+            <thead>
+                <tr class="h1">
+                    <th colspan="9">Sport</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr class="h2">
+                    <th colspan="3"><a href="#tennis">Tennis</a></th>
+                    <th colspan="4"><a href="#schwimmen">Wassersport</a></th>
+                    <th colspan="2"><a href="#fußball">Fußball</a></th>
+                </tr>
+            </thead>
+            <thead>
+                <tr class="h3">
+                    <th colspan="1">Kinder</th>
+                    <th colspan="1">Jugendliche</th>
+                    <th colspan="1">Erwachsene</th>
+                    <th colspan="1">Tauchen</th>
+                    <th colspan="1">Hochseeanglen</th>
+                    <th colspan="2">Schwimmen</th>
+                    <th colspan="1">Kinder</th>
+                    <th colspan="1">Jugendliche</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Det Tennisplatz ist für Kinder nur in Begleitung von Erziehungsberechtigten zu folgenden Zeiten
+                        geöffnet...</td>
+                    <td>Jugendliche dürfen den Tennisplatz nur unter Anleitung unserer Tennislehrer nutzen. Dazu stehen
+                        Ihnen folgende Zeiten zur Verfügung...</td>
+                    <td>Erwachsene können den Platz täglich von 8:00 Uhr bis 20:00 Uhr nutzen. Sonntags wird der Platz
+                        bereits ab 15:00 Uhr geschlossen.</td>
+                    <td>Mit dem Tauchanbieter "Fernandos Unterwassertouren" haben wir einen Vertrag abgeschlossen, der
+                        es unseren Gästen ermöglicht, alle Angebote mit einem Rabatt von 10% zu nutzen. Die Öffnungs-
+                        und Tourzeiten finden Sie direkt bei "Fernandos Unterwasserwelt".</td>
+                    <td>Für Hochseeangeltouren chartern wir jeden Dienstag ein Boot für unsere Gäste. Die Tour findet
+                        nur statt, wenn sich mindestens 5 Teilnehmer finden. Die Anmeldung ist verbindlich. Für Gruppen
+                        ab 5 Personen können individuelle Termine vereinbart werden.</td>
+                    <td>Freies Schwimmen ist in unserem Hotelpool jederzeit für alle Gäste möglich.</td>
+                    <td>Schwimmkurse (10 Einheiten) unter fachkundiger Anleitung nur auf Anfrage.</td>
+                    <td>Vormittags steht der hoteleigene Fußballplatz den Kindern zur Verfügung.</td>
+                    <td>Die Jugendliche dürfen den Platz nachmittags nutzen.</td>
+                </tr>
+
+                <tr>
+                    <td>kostenlos</td>
+                    <td>10,- EUR je Stunde für den Trainer</td>
+                    <td>kostenlos</td>
+                    <td>Preise laut Preistabelle von "Fernandos Unterwasserwelt"</td>
+                    <td>Maximal 200,- EUR / je Person (bei mehr Teilnehmer wird es günstiger)</td>
+                    <td>kostenlos</td>
+                    <td>100,- EUR</td>
+                    <td>kostenlos</td>
+                    <td>kostenlos</td>
+                </tr>
+
+                <tr class="header">
+
+                </tr>
+
+
+            </tbody>
+            <thead>
+                <tr class="h1">
+                    <th colspan="9">Entspannung und Wellness</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr class="h2">
+                    <th colspan="3">Sauna (täglich von 08:00 bis 20:00 Uhr)</th>
+                    <th colspan="6">Kosmetik</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr class="h3">
+                    <th colspan="1" class="h3">Damen</th>
+                    <th colspan="1" class="h3">Herren</th>
+                    <th colspan="1" class="h3">Gemischt</th>
+                    <th colspan="2" class="h3">Friseur</th>
+                    <th colspan="2" class="h3">Maniküre</th>
+                    <th colspan="2" class="h3">Massage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>täglich von 10:00 Uhr bis 12:00 Uhr</td>
+                    <td>täglich von 14:00 Uhr bis 16:00 Uhr</td>
+                    <td>in den übrigen Zeiten</td>
+                    <td>Damen</td>
+                    <td>Herren</td>
+                    <td>Damen</td>
+                    <td>Herren</td>
+                    <td>Teilmassage</td>
+                    <td>Ganzkörpermassage</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">kostenlos</td>
+                    <td>50,- EUR</td>
+                    <td>25,- EUR</td>
+                    <td colspan="2">Leistungen nach Preisliste im Studio</td>
+                    <td>30,- EUR (eine halbe Stunde)</td>
+                    <td>60,- EUR (eine ganze Stunde)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr style="width: 50vw; margin: 50px auto;">
+
+        <section class="trips" id="museum">
+            <h2>Museum - <span style="font-size: smaller; color: #5e5e5e;">Kultur</span></h2>
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./IMAGES/museum.jpg">
+                <source media="(min-width: 600px)" srcset="./IMAGES/museumMin.jpg">
+                <source media="(max-width: 599px)" srcset="./IMAGES/museumTiny.jpg">
+                <img src="./IMAGES/museum.jpg" alt="London Museum">
+            </picture>
+            <p>
+                Visit the Museum and learn about the history of the city.
+                The museum is located in the city center and is easily accessible by public transport.
+            </p>
+        </section>
+
+        <section class="trips" id="radfahren">
+            <h2>Radtour - <span style="font-size: smaller; color: #5e5e5e;">Sport</span></h2>
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./IMAGES/radfahren.jpg">
+                <source media="(min-width: 600px)" srcset="./IMAGES/radfahrenMin.jpg">
+                <source media="(max-width: 599px)" srcset="./IMAGES/radfahrenTiny.jpg">
+                <img src="./IMAGES/radfahren.jpg" alt="Radfahrer">
+            </picture>
+            <p>
+                Make a trip to the countryside and enjoy the beautiful nature.
+                You can rent a bike at the hotel and we will provide you with a map of the area.
+            </p>
+        </section>
+
+        <section class="trips" id="schiffahrt">
+            <h2>Schiffahrt - <span style="font-size: smaller; color: #5e5e5e;">Erlebnis</span></h2>
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./IMAGES/schiffreise.jpg">
+                <source media="(min-width: 600px)" srcset="./IMAGES/schiffreiseMin.jpg">
+                <source media="(max-width: 599px)" srcset="./IMAGES/schiffreiseTiny.jpg">
+                <img src="./IMAGES/schiffreise.jpg" alt="schiffahrt">
+            </picture>
+            <p>
+                Take a boat trip on the river and enjoy the beautiful scenery.
+                The boat leaves from the city center and takes you on a tour of the city and its surroundings.
+            </p>
+        </section>
+
+        <section class="trips" id="wanderung">
+            <h2>Wanderung - <span style="font-size: smaller; color: #5e5e5e;">Gesundheit</span></h2>
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./IMAGES/wanderung2.jpg">
+                <source media="(min-width: 600px)" srcset="./IMAGES/wanderungMin.jpg">
+                <source media="(max-width: 599px)" srcset="./IMAGES/wanderungTiny.jpg">
+                <img src="./IMAGES/wanderung2.jpg" alt="wandern">
+            </picture>
+            <p>
+                Take a boat trip on the river and enjoy the beautiful scenery.
+                The boat leaves from the city center and takes you on a tour of the city and its surroundings.
+            </p>
+        </section>
+
+        <hr style="width: 50vw; margin: 50px auto;">
+
+        <section class="trips" id="volleyball">
+            <h2>Volleyball - <span style="font-size: smaller; color: #5e5e5e;">Sport</span></h2>
+            <video controls autoplay muted style="width: 560px; height: 315px;">
+                <source src="./VIDEOS/volleyball.mp4" type="video/mp4">
+                Ihr Browser unterstützt das Video-Tag nicht.
+            </video>
+            <p>
+                Play a game of volleyball with your friends on the beach.
+                The beach is located 10 minutes from the hotel and is easily accessible by public transport.
+            </p>
+        </section>
+
+        <section class="trips" id="sauna">
+            <h2>Saunieren - <span style="font-size: smaller; color: #5e5e5e;">Entspannung</span></h2>
+            <iframe width="560px" height="315px"
+                src="https://www.youtube.com/embed/YhgCX2gTf7w?si=OECul5DLxiQ7aoW0?autoplay=1" title="Sauna Video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>
+                Relax in our sauna and enjoy the beautiful view of the city.
+                The sauna is located on the top floor of the hotel and is open from 8am to 10pm.
+            </p>
+        </section>
+
+        <section class="trips" id="mountainbiken">
+            <h2>Mountainbiken - <span style="font-size: smaller; color: #5e5e5e;">Sport</span></h2>
+            <video controls autoplay muted style="width: 560px; height: 315px;">
+                <source src="./VIDEOS/mountainbiken.webm" type="video/webm">
+                Ihr Browser unterstützt das Video-Tag nicht.
+            </video>
+            <p>
+                Go mountain biking in the mountains and enjoy the beautiful scenery.
+                The mountains are located 30 minutes from the hotel and are easily accessible by public transport.
+            </p>
+        </section>
+
+        <section class="trips" id="springen">
+            <h2>Fallschirmspringen - <span style="font-size: smaller; color: #5e5e5e;">Action</span></h2>
+            <iframe width="800px" height="800px"
+                src="https://www.ausflugstipps.at/oesterreich-poi/detail/430010692/fallschirmspringen-hirschbach-im-muehlkreis.html"></iframe>
+            <p>
+                Experience the thrill of skydiving and enjoy the beautiful view of the city from above.
+                The skydiving center is located 1 hour from the hotel and is easily accessible by car.
+            </p>
+        </section>
+
+        <hr style="width: 50vw; margin: 50px auto;">
+
+        <section class="trips" id="fußball">
+            <h2>Fußball - <span style="font-size: smaller; color: #5e5e5e;">Zusatz</span></h2>
+            <p>
+                Play football on our ervergreen field surrounded by nature!
+            </p>
+        </section>
+
+        <section class="trips" id="schwimmen">
+            <h2>Schwimmen - <span style="font-size: smaller; color: #5e5e5e;">Zusatz</span></h2>
+            <p>
+                Swim in the lake near the hotel or go ice bathing in the ever-cold river.
+            </p>
+        </section>
+
+        <section class="trips" id="tennis">
+            <h2>Tennis - <span style="font-size: smaller; color: #5e5e5e;">Zusatz</span></h2>
+            <p>
+                Play tennis when you want to with other hotel visitors or with locals from the city!
+            </p>
+        </section>
+    </main>
+
+    <!-- Platzhalter -->
+    <footer id="footer-placeholder"></footer>
+    <div id="back-to-top-button"></div>
+
+    <!-- Skripte -->
+    <script src="../GLOBAL_SCRIPTS/loadHeader.js"></script>
+    <script src="../GLOBAL_SCRIPTS/loadNavigation.js"></script>
+    <script src="../GLOBAL_SCRIPTS/loadFooter.js"></script>
+    <script src="../GLOBAL_SCRIPTS/loadGoToTopButton.js"></script>
+    <script src="../GLOBAL_SCRIPTS/GoToTop.js"></script>
+
+    <script src="./SCRIPT/slideshowScript.js"></script>
+    <script src="./SCRIPT/hideTable.js"></script>
+</body>
+
+</html>

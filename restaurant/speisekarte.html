@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../global.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/Speisekarte.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/MediaQueries.css">
+    <link type="text/css" rel="stylesheet" href="./CSS/Effekte.css">
+    <title>Restaurant-Speisekarte</title>
+</head>
+<body>
+    <div class="overall-container" id="top">
+        <header class="Main-Header">
+            <h1>Speisekarte</h1>
+            <nav>
+                <a href="#Suppen">Suppen</a>
+                <a href="#Salate">Salate</a>
+                <a href="#Pizzen">Pizzen</a>
+            </nav>
+        </header>
+
+        <div class="Space">
+            <h3>Buon appetito</h3>
+        </div>
+        
+        <!-- Abschnitt Suppe -->
+        <section id="Suppe">
+            <div class="Section-Header">
+                <h2>Zuppa</h2>
+                <h3>Suppe</h3>
+            </div>
+    
+            <div class="Section-Main">
+                <div class="menu">
+                    <p class="menu-line-suppe" data-img="Tomatensuppe.jpg">1) Zuppa di Pomodoro - Tomatensuppe 7,00 €</p>
+                    <p class="menu-line-suppe" data-img="Fischsuppe.jpg">2) Costiera Amalfitana - Fischsuppe 16,00 €</p>
+                    <p class="menu-line-suppe" data-img="Minestrone.jpg">3) Minestrone - Gemüsesuppe 8,50 €</p>
+                </div>
+                <div class="image">
+                    <img id="changeable-image-suppe" src="./IMAGES/Tomatensuppe.jpg" alt="Tomatensuppe">
+                </div>
+            </div>
+        </section>
+
+        <!-- Abschnitt Salate -->
+        <section id="Salate">
+            <div class="Section-Header">
+                <h2>Insalata</h2>
+                <h3>Salate</h3>
+            </div>
+    
+            <div class="Section-Main">
+                <div class="menu">
+                    <p class="menu-line-salat" data-img="Mista.jpg">1) Insalata Mista - Gemischter Salat 7,00 €</p>
+                    <p class="menu-line-salat" data-img="Rucola.jpg">2) Insalata Rucola - Rucola Salat 16,00 €</p>
+                    <p class="menu-line-salat" data-img="Pomodori.jpg">3) Insalata di Pomodori - Tomaten Salat 8,00 €</p>
+                </div>
+                <div class="image">
+                    <img id="changeable-image-salat" src="./IMAGES/Mista.jpg" alt="Tomatensuppe">
+                </div>
+            </div>
+        </section>
+
+        <!-- Abschnitt Pizzen -->
+        <section id="Pizzen">
+            <div class="Section-Header">
+                <h2>Pizza</h2>
+                <h3>Pizza</h3>
+            </div>
+    
+            <div class="Section-Main">
+                <div class="menu">
+                    <p class="menu-line-pizza" data-img="Margherita.jpg">1) Pizza Margherita 09,50 €</p>
+                    <p class="menu-line-pizza" data-img="Diavola.jpg"   >2) Pizza Diavola <span style="color: red;">(scharf)</span> 13,00 €</p>
+                    <p class="menu-line-pizza" data-img="Tonno.jpg"     >3) Pizza - Tonno 14,00 €</p>
+                </div>
+                <div class="image">
+                    <img id="changeable-image-pizza" src="./IMAGES/Margherita.jpg" alt="Tomatensuppe">
+                </div>
+            </div>
+    
+            <div class="Section-Footer">
+                <p>Go to top</p>
+                <a href="#top"><img style="width: 40px;" src="./IMAGES/pfeil.png" alt="pfeil nach oben"></a>
+            </div>
+        </section>
+
+    </div>
+    <script src="./JS/script.js"></script>
+</body>
+</html>

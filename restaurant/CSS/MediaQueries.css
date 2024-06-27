@@ -1,0 +1,5 @@
+@media (max-width: 600px) {
+    .Section-Main {
+        flex-direction: column; /* Richtung auf 'row' ändern */
+    }
+}
